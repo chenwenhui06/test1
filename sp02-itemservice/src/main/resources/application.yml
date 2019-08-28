@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: item-service
+    
+#server:
+  #port: 8001
+  
+eureka:
+  client:
+    service-url:
+      #defaultZone结合云服务器才能设置其它选项
+           # 同时向eureka集群中的每台服务器都注册服务地址
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+
+      
+      
+---
+spring:
+  profiles: item1
+  
+server:
+  port: 8001
+---
+spring:
+  profiles: item2
+
+server:
+  port: 8002
