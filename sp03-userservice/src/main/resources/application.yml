@@ -15,3 +15,4 @@ eureka:
       #defaultZone结合云服务器才能设置其它选项
           # 同时向eureka集群中的每台服务器都注册服务地址
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+
